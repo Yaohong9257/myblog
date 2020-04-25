@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Yaohong</title>
+    <link>http://www.yaohong.vip/post/</link>
+    <description>Recent content in Posts on Yaohong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Apr 2020 15:57:20 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.yaohong.vip/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to use CleanWhite Hugo Theme?</title>
+      <link>http://www.yaohong.vip/post/how-to-use-cleanwhite-hugo-theme/</link>
+      <pubDate>Fri, 24 Apr 2020 15:57:20 +0800</pubDate>
+      
+      <guid>http://www.yaohong.vip/post/how-to-use-cleanwhite-hugo-theme/</guid>
+      <description>How to use CleanWhite Hugo Theme? CleanWhite Hugo Theme 是Huabing Zhao制作的hugo主题，非常高雅好用，再次感谢Huabing。 我在使用时，花了一点时间，主要遇到以下问</description>
+    </item>
+    
+  </channel>
+</rss>

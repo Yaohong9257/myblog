@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tops on Yaohong</title>
+    <link>http://www.yaohong.vip/top/</link>
+    <description>Recent content in Tops on Yaohong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://www.yaohong.vip/top/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://www.yaohong.vip/top/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.yaohong.vip/top/about/</guid>
+      <description>About me I&amp;rsquo;m Rhys.
+Try to be a lifelong learner.</description>
+    </item>
+    
+  </channel>
+</rss>
