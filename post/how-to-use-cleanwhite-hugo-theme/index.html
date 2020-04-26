@@ -451,6 +451,7 @@ git push --all
 </code></pre><p>2.同时在<code>themes/hugo-theme-cleanwhite/layouts/partials/comments.html</code>添加如下代码：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#6272a4">&lt;!-- vcomments 评论框 end --&gt;</span>
 {{ if .Site.Params.valine_comment }}
+<span style="color:#ff79c6">&lt;script</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#39;//unpkg.com/valine/dist/Valine.min.js&#39;</span><span style="color:#ff79c6">&gt;&lt;/script&gt;</span>
 <span style="color:#ff79c6">&lt;div</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;vcomments&#34;</span><span style="color:#ff79c6">&gt;&lt;/div&gt;</span>
 <span style="color:#ff79c6">&lt;script&gt;</span>
     new Valine({
