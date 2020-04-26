@@ -115,10 +115,6 @@
                     
 
                     
-		    <li>
-                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
-		    </li>
-                    
                 </ul>
             </div>
         </div>
@@ -353,6 +349,7 @@ window.addEventListener('load', function () {
         <li><a href="#5怎么部署到github上">5.怎么部署到github上</a></li>
         <li><a href="#6什么设置个人域名">6.什么设置个人域名？</a></li>
         <li><a href="#7怎么快速开启评论">7.怎么快速开启评论？</a></li>
+        <li><a href="#8点击右上角的搜索怎么提示404">8.点击右上角的搜索，怎么提示404?</a></li>
       </ul>
     </li>
   </ul>
@@ -369,6 +366,7 @@ window.addEventListener('load', function () {
 <li>5.怎么部署到github上？</li>
 <li>6.什么设置个人域名？[可选]</li>
 <li>7.怎么开启评论？</li>
+<li>8.点击右上角的搜索，怎么提示404?</li>
 </ul>
 <p>一个一个讲。</p>
 <h2 id="1configtoml配置文件怎么配置">1.config.toml配置文件怎么配置？</h2>
@@ -459,6 +457,8 @@ git push --all
 <span style="color:#ff79c6">&lt;/script&gt;</span>
 {{ end }}
 </code></pre></div><p>参考：<a href="https://valine.js.org/">valine</a></p>
+<h2 id="8点击右上角的搜索怎么提示404">8.点击右上角的搜索，怎么提示404?</h2>
+<p>需要在<code>content/</code>里添加<code>search</code>文件夹，然后在<code>search</code>下建一个空文件，名字叫<code>placeholder.md</code>。</p>
 
 
                 
@@ -620,6 +620,15 @@ git push --all
 
 		    
                     
+                    <li>
+                        <a target="_blank" href="/img/social/social_wechat_yaohong.jpeg">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
                     
                     <li>
                         <a target="_blank" href="https://github.com/yaohong9257">
