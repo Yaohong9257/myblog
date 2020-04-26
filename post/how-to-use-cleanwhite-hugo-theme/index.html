@@ -354,6 +354,8 @@ $(function() {
         <li><a href="#3怎么在顶部菜单栏添加分类">3.怎么在顶部菜单栏添加分类？</a></li>
         <li><a href="#4主页图片怎么设置">4.主页图片怎么设置？</a></li>
         <li><a href="#5怎么部署到github上">5.怎么部署到github上</a></li>
+        <li><a href="#6什么设置个人域名">6.什么设置个人域名？</a></li>
+        <li><a href="#7怎么快速开启评论">7.怎么快速开启评论？</a></li>
       </ul>
     </li>
   </ul>
@@ -369,6 +371,7 @@ $(function() {
 <li>4.主页图片怎么设置？</li>
 <li>5.怎么部署到github上？</li>
 <li>6.什么设置个人域名？[可选]</li>
+<li>7.怎么开启评论？</li>
 </ul>
 <p>一个一个讲。</p>
 <h2 id="1configtoml配置文件怎么配置">1.config.toml配置文件怎么配置？</h2>
@@ -431,7 +434,34 @@ hugo
 
 <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Pushing to github&#34;</span>
 git push --all
-</code></pre></div>
+</code></pre></div><h2 id="6什么设置个人域名">6.什么设置个人域名？</h2>
+<p>待补充</p>
+<h2 id="7怎么快速开启评论">7.怎么快速开启评论？</h2>
+<p><code>hugo-theme-cleanwhite</code>内置支持disqus评论，但在中国不能用，需要添加服务器代理，评论还需要登录。</p>
+<p>因此我在网上找了其它方式来实现，发现valine可以实现这个功能，且不用添加代理。</p>
+<p>valine是一款快速、简洁且高效的无后端评论系统，集成方法如下：</p>
+<p>1.在<code>config.toml</code>里<code>[params]</code>下添加</p>
+<pre><code>[params]
+  ...
+  # valine
+  valine_comment = true 
+  leancloud_app_id_for_valine = &quot;&quot; # 改成你的leancloud_app_id
+  leancloud_app_key_for_valine = &quot;&quot; # 改成你的leancloud_app_key
+  ...
+</code></pre><p>2.同时在<code>themes/hugo-theme-cleanwhite/layouts/partials/comments.html</code>添加如下代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#6272a4">&lt;!-- vcomments 评论框 end --&gt;</span>
+{{ if .Site.Params.valine_comment }}
+<span style="color:#ff79c6">&lt;div</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;vcomments&#34;</span><span style="color:#ff79c6">&gt;&lt;/div&gt;</span>
+<span style="color:#ff79c6">&lt;script&gt;</span>
+    new Valine({
+        el: &#39;#vcomments&#39;,
+        appId: &#39;{{ .Site.Params.leancloud_app_id_for_valine }}&#39;,
+        appKey: &#39;{{ .Site.Params.leancloud_app_key_for_valine }}&#39;
+    })
+<span style="color:#ff79c6">&lt;/script&gt;</span>
+{{ end }}
+</code></pre></div><p>参考：<a href="https://valine.js.org/">valine</a></p>
+
 
                 
                 
@@ -491,14 +521,8 @@ git push --all
 
 
 
-<div id="vcomments"></div>
-<script>
-    new Valine({
-        el: '#vcomments',
-        appId: 'jcb1xc6NmyXeatCQxOhKVYMF-gzGzoHsz',
-        appKey: 'dGFLVjlzCvlwQderBmGTeFoH'
-    })
-</script>
+
+
 
             </div>
             
