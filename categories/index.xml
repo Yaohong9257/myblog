@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2020 09:40:20 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2020 20:38:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Notes</title>
+      <link>https://www.yaohong.vip/categories/notes/</link>
+      <pubDate>Mon, 27 Apr 2020 20:38:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/categories/notes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TECH</title>
