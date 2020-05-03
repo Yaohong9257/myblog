@@ -6,10 +6,19 @@
     <description>Recent content on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 22:39:20 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 09:15:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>深度学习-第一个数字识别项目</title>
+      <link>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</link>
+      <pubDate>Sun, 03 May 2020 09:15:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</guid>
+      <description>深度学习-第一个数字识别项目 今天按Google官方推荐流程，整理了开发模板，不是所有深度学习都严格按这个模板来实现，不同项目步骤有所删减，但</description>
+    </item>
     
     <item>
       <title>深度学习的历史（一）</title>
@@ -54,15 +63,6 @@
       
       <guid>https://www.yaohong.vip/categories/tech/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</guid>
-      <description>深度学习-第一个数字识别项目 今天按Google官方推荐流程，整理了开发模板，不是所有深度学习都严格按这个模板来实现，不同项目步骤有所删减，但</description>
     </item>
     
     <item>
