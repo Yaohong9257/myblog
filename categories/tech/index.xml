@@ -6,10 +6,19 @@
     <description>Recent content in TECH on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2020 09:40:20 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 22:39:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>深度学习的历史（一）</title>
+      <link>https://www.yaohong.vip/post/deeplearninghistory1/</link>
+      <pubDate>Fri, 01 May 2020 22:39:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/post/deeplearninghistory1/</guid>
+      <description>深度学习的历史（一） 深度学习的主要突破是从2011年开始，开始超越其它算法成为主流也是从这个时间开始，因此我们有必要先了解从2011年开始的</description>
+    </item>
     
     <item>
       <title>Echo set color</title>

@@ -22,9 +22,9 @@
     
 
     
-    <meta name="title" content="How to use CleanWhite Hugo Theme?" />
-    <meta property="og:title" content="How to use CleanWhite Hugo Theme?" />
-    <meta property="twitter:title" content="How to use CleanWhite Hugo Theme?" />
+    <meta name="title" content="" />
+    <meta property="og:title" content="" />
+    <meta property="twitter:title" content="" />
     
 
     
@@ -41,9 +41,9 @@
     <meta name="keyword"  content="黄耀鸿, Yaohong Blog, Huangyaohong Blog, Rhys Blog, 黄耀鸿的博客, 人工智能, 全栈工程师, 神经网络, 深度学习, 机器学习">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>How to use CleanWhite Hugo Theme?-黄耀鸿的博客 | Rhys Blog</title>
+    <title>黄耀鸿的博客 | Rhys Blog</title>
 
-    <link rel="canonical" href="/post/how-to-use-cleanwhite-hugo-theme/">
+    <link rel="canonical" href="/post/machinelearning/mynumberidentify/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -170,22 +170,18 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/how-to-do" title="How to do">
-                            How to do
-                        </a>
-                        
                     </div>
-                    <h1>How to use CleanWhite Hugo Theme?</h1>
+                    <h1></h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
                         
-                                 &#34;yaohong&#34;
+                                Yaohong
                          
                         on 
-                        Friday, April 24, 2020
+                        Monday, January 1, 0001
                         
-                            <span id="/post/how-to-use-cleanwhite-hugo-theme/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                            <span id="/post/machinelearning/mynumberidentify/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -344,125 +340,133 @@ window.addEventListener('load', function () {
                 </header>
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#how-to-use-cleanwhite-hugo-theme">How to use CleanWhite Hugo Theme?</a>
-      <ul>
-        <li><a href="#1configtoml配置文件怎么配置">1.config.toml配置文件怎么配置？</a></li>
-        <li><a href="#2怎么在主页显示文章列表">2.怎么在主页显示文章列表？</a></li>
-        <li><a href="#3怎么在顶部菜单栏添加分类">3.怎么在顶部菜单栏添加分类？</a></li>
-        <li><a href="#4主页图片怎么设置">4.主页图片怎么设置？</a></li>
-        <li><a href="#5怎么部署到github上">5.怎么部署到github上</a></li>
-        <li><a href="#6什么设置个人域名">6.什么设置个人域名？</a></li>
-        <li><a href="#7怎么快速开启评论">7.怎么快速开启评论？</a></li>
-        <li><a href="#8点击右上角的搜索怎么提示404">8.点击右上角的搜索，怎么提示404?</a></li>
-      </ul>
-    </li>
+    <li><a href="#深度学习-第一个数字识别项目">深度学习-第一个数字识别项目</a></li>
   </ul>
 </nav>
                 
-                <h1 id="how-to-use-cleanwhite-hugo-theme">How to use CleanWhite Hugo Theme?</h1>
-<p>CleanWhite Hugo Theme 是<a href="https://zhaohuabing.com/">Huabing Zhao</a>制作的hugo主题，非常高雅好用，再次感谢Huabing。</p>
-<p>我在使用时，花了一点时间，主要遇到以下问题：</p>
+                <h1 id="深度学习-第一个数字识别项目">深度学习-第一个数字识别项目</h1>
+<p>今天按Google官方推荐流程，整理了开发模板，不是所有深度学习都严格按这个模板来实现，不同项目步骤有所删减，但大体框架是差不多的，主要为以下过程。</p>
 <ul>
-<li>1.config.toml怎么配置？</li>
-<li>2.怎么在主页显示文章列表？</li>
-<li>3.怎么在顶部菜单栏添加分类？</li>
-<li>4.主页图片怎么设置？</li>
-<li>5.怎么部署到github上？</li>
-<li>6.什么设置个人域名？[可选]</li>
-<li>7.怎么开启评论？</li>
-<li>8.点击右上角的搜索，怎么提示404?</li>
+<li>0.定义你的问题和目标。</li>
+<li>1.构建你的数据集。
+<ul>
+<li>1.1.1 收集原始数据：大小、质量。
+<ul>
+<li>1.1.1.1.1质量-可靠性。遗漏的值、重复的例子、不良标签、不良特征。</li>
 </ul>
-<p>一个一个讲。</p>
-<h2 id="1configtoml配置文件怎么配置">1.config.toml配置文件怎么配置？</h2>
-<p>其实Huabing在themes里有exampleSite文件夹，配置可以参考exampleSite下的<code>config.toml</code>配置；</p>
-<h2 id="2怎么在主页显示文章列表">2.怎么在主页显示文章列表？</h2>
-<p>需要在<code>content</code>目录下创建<code>post</code>文件夹，然后把所有<code>markdown</code>文件都放这里。</p>
-<h2 id="3怎么在顶部菜单栏添加分类">3.怎么在顶部菜单栏添加分类？</h2>
-<p>如果你想添加一个分类，可以按如下方式操作：</p>
-<p>1.可以在<code>config.toml</code>文件中，将<code>omit_categories</code>改为<code>fasle</code>，如</p>
-<pre><code>[params]
-  ...
-  omit_categories = false
-  ...
-</code></pre><p><code>...</code>表示省略其它内容。</p>
-<p>2.在<code>content/post/</code>里某一个md文件中，在其文件头添加<code>categories</code>这一项，如：</p>
-<pre><code>---
-title:       &quot;Hello World&quot;
-subtitle:    &quot;&quot;
-description: &quot;&quot;
-date:        2020-04-24T15:57:20+08:00
-author:      &quot;yaohong&quot;
-image:       &quot;&quot;
-tags:        [&quot;How to do&quot;]
-categories:	 [&quot;TECH&quot;]
----
-</code></pre><p>这里<code>categories:	 [&quot;TECH&quot;]</code>是个数组，可以在中括号里添加多个值，注意需要有引号，还有就是这个值有用，需要在下一步创建一个叫<code>tech.md</code>的空文件，看第3步。</p>
-<p>3.在<code>content/</code>目录下创建<code>categories</code>文件夹，然后在<code>categories</code>添加<code>tech.md</code>文件，<code>tech</code>的值为md文件头中<code>categories</code>的值，这样就可以使用啦。</p>
-<h2 id="4主页图片怎么设置">4.主页图片怎么设置？</h2>
-<p>在项目根目录的static文件夹下，创建<code>img</code>文件夹，图片放在这里面。</p>
-<h2 id="5怎么部署到github上">5.怎么部署到github上</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#ff79c6">#!/bin/sh
-</span><span style="color:#ff79c6"></span><span style="color:#ff79c6">if</span> <span style="color:#ff79c6">[</span> <span style="color:#f1fa8c">&#34;`git status -s`&#34;</span> <span style="color:#ff79c6">]</span>
-<span style="color:#ff79c6">then</span>
-    <span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;The working directory is dirty. Please commit any pending changes.&#34;</span>
-    <span style="color:#8be9fd;font-style:italic">exit</span> 1;
-<span style="color:#ff79c6">fi</span>
+</li>
+<li>1.2 识别特征和标签。</li>
+<li>1.3 采样和分割数据集。</li>
+</ul>
+</li>
+<li>2.转换数据。
+<ul>
+<li>2.1 探索和清理数据</li>
+<li>2.2 特征设计。
+<ul>
+<li>2.2.1 数值数据的转换</li>
+<li>2.2.1 归一化：缩放、剪裁、对数缩放、Z-score</li>
+<li>2.2.1 水桶化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3.训练一个模型。</li>
+<li>4.部署一个模型。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#6272a4">## 0.定义你的问题和目标。</span>
+<span style="color:#6272a4">## 识别数字图片</span>
 
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Deleting old publication&#34;</span>
-rm -rf public
-mkdir public
-git worktree prune
-rm -rf .git/worktrees/public/
+<span style="color:#6272a4"># * 1.构建你的数据集。</span>
+<span style="color:#6272a4">#   * 1.1.1 收集原始数据：大小、质量。</span>
+<span style="color:#6272a4">#     * 1.1.1.1.1质量-可靠性。遗漏的值、重复的例子、不良标签、不良特征。</span>
+<span style="color:#6272a4">#   * 1.2 识别特征和标签。</span>
+<span style="color:#6272a4">#   * 1.3 采样和分割数据集。</span>
+<span style="color:#ff79c6">from</span> keras.datasets <span style="color:#ff79c6">import</span> mnist
 
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Checking out gh-pages branch into public&#34;</span>
-git worktree add -B gh-pages public origin/gh-pages
+(x_train, y_train), (x_test, y_test) <span style="color:#ff79c6">=</span> mnist<span style="color:#ff79c6">.</span>load_data()
 
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Removing existing files&#34;</span>
-rm -rf public/*
-
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Generating site&#34;</span>
-hugo
-
-<span style="color:#6272a4"># add CNAME only for customing domain</span>
-<span style="color:#6272a4"># touch public/CNAME</span>
-<span style="color:#6272a4"># echo &#34;www.yaohong.vip&#34; &gt; public/CNAME</span>
+<span style="color:#6272a4"># * 2.转换数据。</span>
+<span style="color:#6272a4">#   * 2.1 探索和清理数据</span>
+<span style="color:#6272a4">#   * 2.2 特征设计。</span>
+<span style="color:#6272a4">#     * 2.2.1 数值数据的转换 </span>
+<span style="color:#6272a4">#     * 2.2.1 归一化：缩放、剪裁、对数缩放、Z-score</span>
+<span style="color:#6272a4">#     * 2.2.1 水桶化</span>
+x_train, x_test <span style="color:#ff79c6">=</span> x_train <span style="color:#ff79c6">/</span> <span style="color:#bd93f9">255.0</span>, x_test <span style="color:#ff79c6">/</span> <span style="color:#bd93f9">255.0</span>;
 
 
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Updating gh-pages branch&#34;</span>
-<span style="color:#8be9fd;font-style:italic">cd</span> public <span style="color:#ff79c6">&amp;&amp;</span> git add --all <span style="color:#ff79c6">&amp;&amp;</span> git commit -m <span style="color:#f1fa8c">&#34;Publishing to gh-pages (publish.sh)&#34;</span>
+<span style="color:#6272a4"># * 3.训练一个模型。</span>
+<span style="color:#ff79c6">import</span> tensorflow <span style="color:#ff79c6">as</span> tf
+<span style="color:#ff79c6">print</span>(tf<span style="color:#ff79c6">.</span>version)
 
-<span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;Pushing to github&#34;</span>
-git push --all
-</code></pre></div><h2 id="6什么设置个人域名">6.什么设置个人域名？</h2>
-<p>待补充</p>
-<h2 id="7怎么快速开启评论">7.怎么快速开启评论？</h2>
-<p><code>hugo-theme-cleanwhite</code>内置支持disqus评论，但在中国不能用，需要添加服务器代理，评论还需要登录。</p>
-<p>因此我在网上找了其它方式来实现，发现valine可以实现这个功能，且不用添加代理。</p>
-<p>valine是一款快速、简洁且高效的无后端评论系统，集成方法如下：</p>
-<p>1.在<code>config.toml</code>里<code>[params]</code>下添加</p>
-<pre><code>[params]
-  ...
-  # valine
-  valine_comment = true 
-  leancloud_app_id_for_valine = &quot;&quot; # 改成你的leancloud_app_id
-  leancloud_app_key_for_valine = &quot;&quot; # 改成你的leancloud_app_key
-  ...
-</code></pre><p>2.同时在<code>themes/hugo-theme-cleanwhite/layouts/partials/comments.html</code>添加如下代码：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#6272a4">&lt;!-- vcomments 评论框 end --&gt;</span>
-{{ if .Site.Params.valine_comment }}
-<span style="color:#ff79c6">&lt;script</span> <span style="color:#50fa7b">src=</span><span style="color:#f1fa8c">&#39;//unpkg.com/valine/dist/Valine.min.js&#39;</span><span style="color:#ff79c6">&gt;&lt;/script&gt;</span>
-<span style="color:#ff79c6">&lt;div</span> <span style="color:#50fa7b">id=</span><span style="color:#f1fa8c">&#34;vcomments&#34;</span><span style="color:#ff79c6">&gt;&lt;/div&gt;</span>
-<span style="color:#ff79c6">&lt;script&gt;</span>
-    new Valine({
-        el: &#39;#vcomments&#39;,
-        appId: &#39;{{ .Site.Params.leancloud_app_id_for_valine }}&#39;,
-        appKey: &#39;{{ .Site.Params.leancloud_app_key_for_valine }}&#39;
-    })
-<span style="color:#ff79c6">&lt;/script&gt;</span>
-{{ end }}
-</code></pre></div><p>参考：<a href="https://valine.js.org/">valine</a></p>
-<h2 id="8点击右上角的搜索怎么提示404">8.点击右上角的搜索，怎么提示404?</h2>
-<p>需要在<code>content/</code>里添加<code>search</code>文件夹，然后在<code>search</code>下建一个空文件，名字叫<code>placeholder.md</code>。</p>
+
+<span style="color:#6272a4">## prepare loss_fn</span>
+loss_fn <span style="color:#ff79c6">=</span> tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>losses<span style="color:#ff79c6">.</span>SparseCategoricalCrossentropy(from_logits<span style="color:#ff79c6">=</span>True)
+
+
+<span style="color:#6272a4">## define sequesntial</span>
+model <span style="color:#ff79c6">=</span> tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>Sequential();
+<span style="color:#6272a4">## image input </span>
+model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Flatten(input_shape<span style="color:#ff79c6">=</span>(<span style="color:#bd93f9">28</span>,<span style="color:#bd93f9">28</span>)))
+
+<span style="color:#6272a4">## hidden layers</span>
+model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Dense(<span style="color:#bd93f9">128</span>, activation<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;relu&#39;</span> ))
+model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Dropout(<span style="color:#bd93f9">0.9</span>))
+
+<span style="color:#6272a4">## class output. Matching the numbers (0-9)</span>
+model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Dense(<span style="color:#bd93f9">10</span>));
+<span style="color:#6272a4">## 如果你想让你的模型返回一个概率，你可以将训练好的模型进行封装，并将softmax附加到它上</span>
+<span style="color:#6272a4">## model.add(tf.keras.layers.Softmax(10));</span>
+
+<span style="color:#6272a4">## model summary</span>
+model<span style="color:#ff79c6">.</span>summary()
+
+
+<span style="color:#6272a4">## compile model</span>
+model<span style="color:#ff79c6">.</span>compile(optimizer<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;adam&#39;</span>, loss<span style="color:#ff79c6">=</span>loss_fn, metrics<span style="color:#ff79c6">=</span>[<span style="color:#f1fa8c">&#39;accuracy&#39;</span>]);
+
+<span style="color:#6272a4">## fit model</span>
+model<span style="color:#ff79c6">.</span>fit(x_train, y_train, epochs<span style="color:#ff79c6">=</span><span style="color:#bd93f9">5</span>)
+<span style="color:#6272a4">## evaluate</span>
+model<span style="color:#ff79c6">.</span>evaluate(x_test,  y_test, verbose<span style="color:#ff79c6">=</span><span style="color:#bd93f9">2</span>)
+
+<span style="color:#6272a4">## 4.deploy model </span>
+predictions <span style="color:#ff79c6">=</span> model<span style="color:#ff79c6">.</span>predict(x_test[:<span style="color:#bd93f9">3</span>])
+<span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;predictions shape:&#39;</span>, predictions)
+
+<span style="color:#6272a4">## 4.deploy model </span>
+predictions <span style="color:#ff79c6">=</span> model<span style="color:#ff79c6">.</span>predict(x_test)
+<span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;predictions shape:&#39;</span>, predictions)
+
+
+<span style="color:#f1fa8c">&#34;&#34;&#34;## using mabplot to show image&#34;&#34;&#34;</span>
+
+<span style="color:#6272a4"># import matplotlib.pyplot as plt</span>
+<span style="color:#6272a4"># plt.imshow(x_train[1])</span>
+</code></pre></div><p>解析：</p>
+<p>&ldquo;&quot;&quot;## Other</p>
+<ul>
+<li>ReLU (Rectified Linear Unit)</li>
+</ul>
+<p><img src="https://www.yaohong.vip/img/math_formula/relu.png" alt="ReLU curve"></p>
+<p>可以看出，ReLU是半整流（自下而上），当z小于零时，f(z)为零，当z大于或等于零时，f(z)等于z。</p>
+<ul>
+<li>
+<p><code>tf.keras.layers.Flatten</code> 意思是扁平化输入，将多维数组转换为一维数组。</p>
+</li>
+<li>
+<p><code>tf.keras.layers.Dropout</code> 如下图如示，Dropout是一种用于防止模型过度拟合的技术。Dropout的工作原理是在训练阶段的每次更新时，随机设置隐藏单元（构成隐藏层的神经元）的出边为0。</p>
+</li>
+</ul>
+<p><img src="https://www.yaohong.vip/img/math_formula/dropout_neural_network_layer.png" alt="ReLU curve"></p>
+<ul>
+<li><code>tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)</code> 分类交叉熵是一种损失函数，用于单标签分类。这是指每个数据点只适用于一个类别时。换句话说，一个例子只能属于一个类别。请注意。目标块之前的块必须使用激活函数Softmax。</li>
+</ul>
+<p>Categorical_Crossentropy_math: <img src="https://www.yaohong.vip/img/math_formula/categorical_crossentropy.png" alt="Categorical_Crossentropy_math"></p>
+<p>REFERENCE: <a href="https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6">Activation Functions in Neural Networks</a></p>
+<p><a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout">Keras API</a></p>
+<p><a href="https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab">Dropout Neural Network Layer In Keras Explained</a>
+&quot;&rdquo;&rdquo;</p>
 
 
                 
@@ -510,14 +514,9 @@ git push --all
                 <hr>
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/post/machinelearning/mynumberidentify/" data-toggle="tooltip" data-placement="top" title="">&larr;
-                            Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/post/echoaddcolor/" data-toggle="tooltip" data-placement="top" title="Echo set color">Next
+                        <a href="/post/how-to-use-cleanwhite-hugo-theme/" data-toggle="tooltip" data-placement="top" title="How to use CleanWhite Hugo Theme?">Next
                             Post &rarr;</a>
                     </li>
                     
