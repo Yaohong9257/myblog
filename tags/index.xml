@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2020 09:15:20 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 13:43:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to do</title>
+      <link>https://www.yaohong.vip/tags/how-to-do/</link>
+      <pubDate>Sun, 03 May 2020 13:43:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/tags/how-to-do/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Deeplearning</title>
@@ -17,15 +26,6 @@
       <pubDate>Sun, 03 May 2020 09:15:20 +0800</pubDate>
       
       <guid>https://www.yaohong.vip/tags/deeplearning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How to do</title>
-      <link>https://www.yaohong.vip/tags/how-to-do/</link>
-      <pubDate>Sun, 03 May 2020 09:15:20 +0800</pubDate>
-      
-      <guid>https://www.yaohong.vip/tags/how-to-do/</guid>
       <description></description>
     </item>
     

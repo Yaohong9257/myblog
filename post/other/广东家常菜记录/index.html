@@ -22,9 +22,9 @@
     
 
     
-    <meta name="title" content="深度学习-第一个数字识别项目" />
-    <meta property="og:title" content="深度学习-第一个数字识别项目" />
-    <meta property="twitter:title" content="深度学习-第一个数字识别项目" />
+    <meta name="title" content="广东家常菜做法记录" />
+    <meta property="og:title" content="广东家常菜做法记录" />
+    <meta property="twitter:title" content="广东家常菜做法记录" />
     
 
     
@@ -41,9 +41,9 @@
     <meta name="keyword"  content="黄耀鸿, Yaohong Blog, Huangyaohong Blog, Rhys Blog, 黄耀鸿的博客, 人工智能, 全栈工程师, 神经网络, 深度学习, 机器学习">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>深度学习-第一个数字识别项目-黄耀鸿的博客 | Rhys Blog</title>
+    <title>广东家常菜做法记录-黄耀鸿的博客 | Rhys Blog</title>
 
-    <link rel="canonical" href="/post/machinelearning/mynumberidentify/">
+    <link rel="canonical" href="/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -170,17 +170,13 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/deeplearning" title="Deeplearning">
-                            Deeplearning
-                        </a>
-                        
                         <a class="tag" href="/tags/how-to-do" title="How to do">
                             How to do
                         </a>
                         
                     </div>
-                    <h1>深度学习-第一个数字识别项目</h1>
-                    <h2 class="subheading">深度学习的步骤过程</h2>
+                    <h1>广东家常菜做法记录</h1>
+                    <h2 class="subheading">原味、好吃</h2>
                     <span class="meta">
                         Posted by 
                         
@@ -189,7 +185,7 @@
                         on 
                         Sunday, May 3, 2020
                         
-                            <span id="/post/machinelearning/mynumberidentify/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                            <span id="/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -348,133 +344,89 @@ window.addEventListener('load', function () {
                 </header>
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#深度学习-第一个数字识别项目">深度学习-第一个数字识别项目</a></li>
+    <li><a href="#广东家常菜记录">广东家常菜记录</a>
+      <ul>
+        <li><a href="#豆豉排骨">豆豉排骨</a></li>
+        <li><a href="#炒奶白菜">炒奶白菜</a></li>
+        <li><a href="#枸杞叶瘦肉捞面">枸杞叶瘦肉捞面</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 
-                <h1 id="深度学习-第一个数字识别项目">深度学习-第一个数字识别项目</h1>
-<p>今天按Google官方推荐流程，整理了开发模板，不是所有深度学习都严格按这个模板来实现，不同项目步骤有所删减，但大体框架是差不多的，主要为以下过程:</p>
-<ul>
-<li>0.定义你的问题和目标。</li>
-<li>1.构建你的数据集。
-<ul>
-<li>1.1.1 收集原始数据：大小、质量。
-<ul>
-<li>1.1.1.1.1质量-可靠性。遗漏的值、重复的例子、不良标签、不良特征。</li>
-</ul>
-</li>
-<li>1.2 识别特征和标签。</li>
-<li>1.3 采样和分割数据集。</li>
-</ul>
-</li>
-<li>2.转换数据。
-<ul>
-<li>2.1 探索和清理数据</li>
-<li>2.2 特征设计。
-<ul>
-<li>2.2.1 数值数据的转换</li>
-<li>2.2.1 归一化：缩放、剪裁、对数缩放、Z-score</li>
-<li>2.2.1 水桶化</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>3.训练一个模型。</li>
-<li>4.部署一个模型。</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#6272a4">## 0.定义你的问题和目标。</span>
-<span style="color:#6272a4">## 识别数字图片</span>
-
-<span style="color:#6272a4"># * 1.构建你的数据集。</span>
-<span style="color:#6272a4">#   * 1.1.1 收集原始数据：大小、质量。</span>
-<span style="color:#6272a4">#     * 1.1.1.1.1质量-可靠性。遗漏的值、重复的例子、不良标签、不良特征。</span>
-<span style="color:#6272a4">#   * 1.2 识别特征和标签。</span>
-<span style="color:#6272a4">#   * 1.3 采样和分割数据集。</span>
-<span style="color:#ff79c6">from</span> keras.datasets <span style="color:#ff79c6">import</span> mnist
-
-(x_train, y_train), (x_test, y_test) <span style="color:#ff79c6">=</span> mnist<span style="color:#ff79c6">.</span>load_data()
-
-<span style="color:#6272a4"># * 2.转换数据。</span>
-<span style="color:#6272a4">#   * 2.1 探索和清理数据</span>
-<span style="color:#6272a4">#   * 2.2 特征设计。</span>
-<span style="color:#6272a4">#     * 2.2.1 数值数据的转换 </span>
-<span style="color:#6272a4">#     * 2.2.1 归一化：缩放、剪裁、对数缩放、Z-score</span>
-<span style="color:#6272a4">#     * 2.2.1 水桶化</span>
-x_train, x_test <span style="color:#ff79c6">=</span> x_train <span style="color:#ff79c6">/</span> <span style="color:#bd93f9">255.0</span>, x_test <span style="color:#ff79c6">/</span> <span style="color:#bd93f9">255.0</span>;
-
-
-<span style="color:#6272a4"># * 3.训练一个模型。</span>
-<span style="color:#ff79c6">import</span> tensorflow <span style="color:#ff79c6">as</span> tf
-<span style="color:#ff79c6">print</span>(tf<span style="color:#ff79c6">.</span>version)
-
-
-<span style="color:#6272a4">## prepare loss_fn</span>
-loss_fn <span style="color:#ff79c6">=</span> tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>losses<span style="color:#ff79c6">.</span>SparseCategoricalCrossentropy(from_logits<span style="color:#ff79c6">=</span>True)
-
-
-<span style="color:#6272a4">## define sequesntial</span>
-model <span style="color:#ff79c6">=</span> tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>Sequential();
-<span style="color:#6272a4">## image input </span>
-model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Flatten(input_shape<span style="color:#ff79c6">=</span>(<span style="color:#bd93f9">28</span>,<span style="color:#bd93f9">28</span>)))
-
-<span style="color:#6272a4">## hidden layers</span>
-model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Dense(<span style="color:#bd93f9">128</span>, activation<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;relu&#39;</span> ))
-model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Dropout(<span style="color:#bd93f9">0.9</span>))
-
-<span style="color:#6272a4">## class output. Matching the numbers (0-9)</span>
-model<span style="color:#ff79c6">.</span>add(tf<span style="color:#ff79c6">.</span>keras<span style="color:#ff79c6">.</span>layers<span style="color:#ff79c6">.</span>Dense(<span style="color:#bd93f9">10</span>));
-<span style="color:#6272a4">## 如果你想让你的模型返回一个概率，你可以将训练好的模型进行封装，并将softmax附加到它上</span>
-<span style="color:#6272a4">## model.add(tf.keras.layers.Softmax(10));</span>
-
-<span style="color:#6272a4">## model summary</span>
-model<span style="color:#ff79c6">.</span>summary()
-
-
-<span style="color:#6272a4">## compile model</span>
-model<span style="color:#ff79c6">.</span>compile(optimizer<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;adam&#39;</span>, loss<span style="color:#ff79c6">=</span>loss_fn, metrics<span style="color:#ff79c6">=</span>[<span style="color:#f1fa8c">&#39;accuracy&#39;</span>]);
-
-<span style="color:#6272a4">## fit model</span>
-model<span style="color:#ff79c6">.</span>fit(x_train, y_train, epochs<span style="color:#ff79c6">=</span><span style="color:#bd93f9">5</span>)
-<span style="color:#6272a4">## evaluate</span>
-model<span style="color:#ff79c6">.</span>evaluate(x_test,  y_test, verbose<span style="color:#ff79c6">=</span><span style="color:#bd93f9">2</span>)
-
-<span style="color:#6272a4">## 4.deploy model </span>
-predictions <span style="color:#ff79c6">=</span> model<span style="color:#ff79c6">.</span>predict(x_test[:<span style="color:#bd93f9">3</span>])
-<span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;predictions shape:&#39;</span>, predictions)
-
-<span style="color:#6272a4">## 4.deploy model </span>
-predictions <span style="color:#ff79c6">=</span> model<span style="color:#ff79c6">.</span>predict(x_test)
-<span style="color:#ff79c6">print</span>(<span style="color:#f1fa8c">&#39;predictions shape:&#39;</span>, predictions)
-
-
-<span style="color:#f1fa8c">&#34;&#34;&#34;## using mabplot to show image&#34;&#34;&#34;</span>
-
-<span style="color:#6272a4"># import matplotlib.pyplot as plt</span>
-<span style="color:#6272a4"># plt.imshow(x_train[1])</span>
-</code></pre></div><p>解析：</p>
-<ul>
-<li>ReLU (Rectified Linear Unit)</li>
-</ul>
-<p><img src="https://www.yaohong.vip/img/math_formula/relu_curve.png" alt="ReLU curve"></p>
-<p>可以看出，ReLU是半整流（自下而上），当z小于零时，f(z)为零，当z大于或等于零时，f(z)等于z。</p>
+                <h1 id="广东家常菜记录">广东家常菜记录</h1>
+<h2 id="豆豉排骨">豆豉排骨</h2>
+<p>食材：</p>
 <ul>
 <li>
-<p><code>tf.keras.layers.Flatten</code> 意思是扁平化输入，将多维数组转换为一维数组。</p>
+<p>排骨一根（约350g）</p>
 </li>
 <li>
-<p><code>tf.keras.layers.Dropout</code> 如下图如示，Dropout是一种用于防止模型过度拟合的技术。Dropout的工作原理是在训练阶段的每次更新时，随机设置隐藏单元（构成隐藏层的神经元）的出边为0。</p>
+<p>豆豉（5克 约覆盖的碗底）</p>
+</li>
+<li>
+<p>香菇（10g 约覆盖的碗底）</p>
+</li>
+<li>
+<p>土豆(80g)</p>
+</li>
+<li>
+<p>酱油(5ml)</p>
+</li>
+<li>
+<p>盐(3克)</p>
+</li>
+<li>
+<p>水（100ml）</p>
 </li>
 </ul>
-<p><img src="https://www.yaohong.vip/img/math_formula/dropout_neural_network_layer.png" alt="Dropout"></p>
+<p>器具：电磁炉、电磁炉高压锅</p>
+<p>做法：</p>
+<p>1.电磁炉调到130度，加食用油（大约10ml，漫过锅底），下豆豉（5克），在锅中炸豆豉，当煎到有味时关火；</p>
+<p>2.排骨一根（约400g）下锅、加5克盐、倒酱油，加少量水（100ml），<strong>搅拌均匀</strong>，目的是使用排骨入味；</p>
+<p>3.将<em>泡软</em>的香菇（30克）铺在表面，将切好的土豆铺在最上层；</p>
+<p>4.盖上锅盖大火煮（我用的是1600W），高压锅开始出气两分钟后，改为小火（300W）煮8分钟；</p>
+<h2 id="炒奶白菜">炒奶白菜</h2>
+<p>食材：</p>
 <ul>
-<li><code>tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)</code> 分类交叉熵是一种损失函数，用于单标签分类。这是指每个数据点只适用于一个类别时。换句话说，一个例子只能属于一个类别。请注意。目标块之前的块必须使用激活函数Softmax。</li>
+<li>
+<p>奶白菜一把（约240g）</p>
+</li>
+<li>
+<p>蒜头两小个(约5g)</p>
+</li>
+<li>
+<p>盐约1g</p>
+</li>
+<li>
+<p>食用油5ml</p>
+</li>
 </ul>
-<p>Categorical_Crossentropy_math:
-<img src="https://www.yaohong.vip/img/math_formula/categorical_crossentropy.png" alt="Categorical_Crossentropy_math"></p>
-<p>参考文献:</p>
-<p><a href="https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6">Activation Functions in Neural Networks</a></p>
-<p><a href="https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout">Keras API</a></p>
-<p><a href="https://towardsdatascience.com/machine-learning-part-20-dropout-keras-layers-explained-8c9f6dc4c9ab">Dropout Neural Network Layer In Keras Explained</a></p>
+<p>器具：电磁炉、电磁炉炒锅</p>
+<h4 id="准备">准备：</h4>
+<p>1.奶白菜洗净，放好。</p>
+<p>2.蒜头两小个，切片；</p>
+<h4 id="做法">做法：</h4>
+<p>1.电磁炉温度调为160度，加食用油，下蒜头，煎到有香味、表面微黄；</p>
+<p>2.下奶白菜，翻炒至菜叶变色出水；</p>
+<h2 id="枸杞叶瘦肉捞面">枸杞叶瘦肉捞面</h2>
+<p>食用人数：2人</p>
+<p>必备材料：</p>
+<pre><code>枸杞叶50克（大）；
+
+瘦肉（70克，约半小碗）；
+
+面（两片，如波菜面）
+
+水
+
+下盐1.5g
+</code></pre>
+<p>器具：电磁炉、电磁炉煮锅</p>
+<p>做法：</p>
+<p>1.锅加水（约500ml），烧开后下面，煮熟后去水，备用；</p>
+<p>2.锅加水（约400ml），烧开后下瘦肉，下盐1.5g，煮约1分钟，然后枸杞叶，叶子变色后把汁倒到面里。</p>
+<p>这种汤主要喝的是枸杞叶和瘦肉的香味。</p>
 
 
                 
@@ -523,15 +475,10 @@ predictions <span style="color:#ff79c6">=</span> model<span style="color:#ff79c6
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/deeplearninghistory1/" data-toggle="tooltip" data-placement="top" title="深度学习的历史（一）">&larr;
+                        <a href="/post/machinelearning/mynumberidentify/" data-toggle="tooltip" data-placement="top" title="深度学习-第一个数字识别项目">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/" data-toggle="tooltip" data-placement="top" title="广东家常菜做法记录">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
 
