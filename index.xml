@@ -6,10 +6,20 @@
     <description>Recent content on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2020 13:43:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 22:25:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Little Baby</title>
+      <link>https://www.yaohong.vip/post/other/mylittlebaby/</link>
+      <pubDate>Thu, 14 May 2020 22:25:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/post/other/mylittlebaby/</guid>
+      <description>My Little Baby My wife and I went to hostipal because she felt pain in womb on 6 May. The doctor advised hostipalization for her. She felt pain frequenctly that night. Doctors gave her a anesthetic that make her felt less pain.
+She was ready to give birth a baby on the next day morning. I was waiting beside the door of delivery room. After two hours pass, a nurse opened the door and told me my wife had given birth a baby successfully.</description>
+    </item>
     
     <item>
       <title>广东家常菜做法记录</title>
@@ -100,7 +110,8 @@
       <guid>https://www.yaohong.vip/top/about/</guid>
       <description>About me I&amp;rsquo;m Yaohong.
 Try to be a lifelong learner.
-Main Url: https://www.yaohong.vip Backup url：https://yaohong.netlify.app/</description>
+Main Url: https://www.yaohong.vip
+Backup url：https://yaohong.netlify.app</description>
     </item>
     
   </channel>

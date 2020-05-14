@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.69.1" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,9 +22,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="My Little Baby" />
+    <meta property="og:title" content="My Little Baby" />
+    <meta property="twitter:title" content="My Little Baby" />
     
 
     
@@ -42,9 +41,9 @@
     <meta name="keyword"  content="黄耀鸿, Yaohong Blog, Huangyaohong Blog, Rhys Blog, 黄耀鸿的博客, 人工智能, 全栈工程师, 神经网络, 深度学习, 机器学习">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Yaohong-黄耀鸿的博客 | Rhys Blog</title>
+    <title>My Little Baby-黄耀鸿的博客 | Rhys Blog</title>
 
-    <link rel="canonical" href="/">
+    <link rel="canonical" href="/post/other/mylittlebaby/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -158,14 +157,164 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/header_image-night-sky.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/header_image-night-sky.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Yaohong </h1>
-                    
-		    <span class="subheading">为了真相不惜被羞辱</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                    </div>
+                    <h1>My Little Baby</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                 &#34;yaohong&#34;
+                         
+                        on 
+                        Thursday, May 14, 2020
+                        
+                            <span id="/post/other/mylittlebaby/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script type="text/javascript">
+AV.initialize("jcb1xc6NmyXeatCQxOhKVYMF-gzGzoHsz", "dGFLVjlzCvlwQderBmGTeFoH");
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+window.addEventListener('load', function () {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount2(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -174,320 +323,143 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#my-little-baby">My Little Baby</a></li>
+  </ul>
+</nav>
+                
+                <h1 id="my-little-baby">My Little Baby</h1>
+<p>My wife and I went to hostipal because she felt pain in womb on 6 May. The doctor advised hostipalization for her. She felt pain frequenctly that night. Doctors gave her a anesthetic that make her felt less pain.</p>
+<p>She was ready to give birth a baby on the next day morning.  I was waiting beside the door of delivery room. After two hours pass, a nurse opened the door and told me my wife had given birth a baby successfully. I was so happy at that time.</p>
+<p>The nurse led us to another room for rest after two-hour observation. I felt guilty about not offer suitable food to my wife at the first time. Both of them sleept on the bed.</p>
+<p>My baby was delicate and sleep quietly. After several hours my little baby waked up. We try to feed him but him didn&rsquo;t suck after hanging off his mother&rsquo;s nipple. I worried about it. Then the nurse came and help my baby suck by touching his jaw with finger. I was so moving when the baby&rsquo;s jaw start move and suck the milk.</p>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p> 「点个赞」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://www.yaohong.vip"><img src="/img/favicon.png" />Yaohong</a></span>
         
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
-
-<div class="post-preview">
-    <a href="https://www.yaohong.vip/post/other/mylittlebaby/">
-        <h2 class="post-title">
-            My Little Baby
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            My Little Baby My wife and I went to hostipal because she felt pain in womb on 6 May. The doctor advised hostipalization for her. She felt pain frequenctly that night. Doctors gave her a anesthetic that make her felt less pain.
-She was ready to give birth a baby on the next day morning. I was waiting beside the door of delivery room. After two hours pass, a nurse opened the door and told me my wife had given birth a baby successfully.
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;yaohong&#34; Thursday, May 14, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://www.yaohong.vip/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/">
-        <h2 class="post-title">
-            广东家常菜做法记录
-        </h2>
-	
-        <h3 class="post-subtitle">
-            原味、好吃
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            广东家常菜 豆豉排骨 食材： 排骨一根（约350g） 豆豉（5克 约覆盖的碗底） 香菇（10g 约覆盖的碗底） 土豆(80g) 酱油(5ml) 盐(3克) 水（1
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;yaohong&#34; Sunday, May 3, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://www.yaohong.vip/post/machinelearning/mynumberidentify/">
-        <h2 class="post-title">
-            深度学习-第一个数字识别项目
-        </h2>
-	
-        <h3 class="post-subtitle">
-            深度学习的步骤过程
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            深度学习-第一个数字识别项目 今天按Google官方推荐流程，整理了开发模板，不是所有深度学习都严格按这个模板来实现，不同项目步骤有所删减，但
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;yaohong&#34; Sunday, May 3, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://www.yaohong.vip/post/deeplearninghistory1/">
-        <h2 class="post-title">
-            深度学习的历史（一）
-        </h2>
-	
-        <h3 class="post-subtitle">
-            更新中...
-        </h3>
-	
-        <div class="post-content-preview">
-	
-            深度学习的历史（一） 深度学习的主要突破是从2011年开始，开始超越其它算法成为主流也是从这个时间开始，因此我们有必要先了解从2011年开始的
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;yaohong&#34; Friday, May 1, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://www.yaohong.vip/post/sensegroup/">
-        <h2 class="post-title">
-            英语发音-连读和节奏
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            连读那些事...
-        
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by Yaohong Monday, April 27, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://www.yaohong.vip/post/echoaddcolor/">
-        <h2 class="post-title">
-            Echo set color
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            Echo set color 先看例子：echo -e &quot;\033[32m Hello world \033[0m&quot; 会输出 $echo -e &quot;\033[32m Hello world \033[0m&quot; Hello world # 绿色的文字 其中： -e表示解析逃逸字符（Escape character），逃逸字符为
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;yaohong&#34; Sunday, April 26, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="https://www.yaohong.vip/post/how-to-use-cleanwhite-hugo-theme/">
-        <h2 class="post-title">
-            How to use CleanWhite Hugo Theme?
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            How to use CleanWhite Hugo Theme? CleanWhite Hugo Theme 是Huabing Zhao制作的hugo主题，非常高雅好用，再次感谢Huabing。 我在使用时，花了一点时间，主要遇到以下问
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    Posted by      &#34;yaohong&#34; Friday, April 24, 2020
-    
-    
-    </p>
-
-</div>
-<hr>
-
-
-            
-
-
-
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-             
-            
-                
-            
-                
-            
-                
-                    <a href="/tags/how-to-do" title="how-to-do">
-                        how-to-do
-                    </a>
-                
-            
-                
-            
-        </div>
-    </section>
-    
-
-    
-	
-    <section class="visible-md visible-lg">
-	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
-        <div class="short-about">
-            
-            <a href="/top/about">
-               <img src="/img/yaohong.jpeg" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Software Developer, Lifelong learner</p>
-            
-           
-           <ul class="list-inline"> 
-               
-               <li>
-                   <a href='/index.xml' rel="alternate" type="application/rss+xml" title="Yaohong" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a href="https://twitter.com/YaohongHuang">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://www.facebook.com/yaohong.huang.167">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="/img/social/social_wechat_yaohong.jpeg">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/yaohong9257">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/yaohong-huang-9a470613b/">
-                       <span class="fa-stack fa-lg">
-                           <i class="fa fa-circle fa-stack-2x"></i>
-                           <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-            
-            
-               
-               
-               
-               
-                </ul>
-            </div>
-    </section>
-	
-    
-    
-
-    
-    
-</div>
-
+	        <p class="tip"><i></i><span>点个赞</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
 	</div>
 </div>
+<script type="text/javascript" src="/js/reward.js"></script>
 
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/" data-toggle="tooltip" data-placement="top" title="广东家常菜做法记录">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+<div id="disqus-comment"></div>
+
+
+
+
+
+
+<div id="vcomments"></div>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'jcb1xc6NmyXeatCQxOhKVYMF-gzGzoHsz',
+        appKey: 'dGFLVjlzCvlwQderBmGTeFoH'
+    })
+</script>
+
+
+
+            </div>
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/how-to-do" title="how-to-do">
+                            how-to-do
+                        </a>
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -499,7 +471,7 @@ She was ready to give birth a baby on the next day morning. I was waiting beside
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/index.xml' rel="alternate" type="application/rss+xml" title="Yaohong" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Yaohong" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
