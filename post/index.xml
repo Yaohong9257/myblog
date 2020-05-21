@@ -22,6 +22,18 @@ She was ready to give birth a baby on the next day morning. I was waiting beside
     </item>
     
     <item>
+      <title>Some notes on Convolution Course</title>
+      <link>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</link>
+      <pubDate>Mon, 04 May 2020 15:18:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</guid>
+      <description>Some notes on Convolution course  What is padding?  Padding is to add some pixels to the border of the original image, such as a 6*6 image will become a 8*8 image if we add a pixel to its border.
+  Why is filters always odd?
+  valid convolution vs same convolution.
+  valid convolution is on padding that means the actual pixels of the output image after we convole original image with filter.</description>
+    </item>
+    
+    <item>
       <title>广东家常菜做法记录</title>
       <link>https://www.yaohong.vip/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 03 May 2020 13:43:20 +0800</pubDate>

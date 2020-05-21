@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Yaohong</title>
-    <link>https://www.yaohong.vip/categories/notes/</link>
+    <link>https://www.yaohong.vip/tags/notes/</link>
     <description>Recent content in Notes on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 May 2020 15:18:20 +0800</lastBuildDate>
     
-	<atom:link href="https://www.yaohong.vip/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.yaohong.vip/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,15 +21,6 @@
   Why is filters always odd?
   valid convolution vs same convolution.
   valid convolution is on padding that means the actual pixels of the output image after we convole original image with filter.</description>
-    </item>
-    
-    <item>
-      <title>英语发音-连读和节奏</title>
-      <link>https://www.yaohong.vip/post/sensegroup/</link>
-      <pubDate>Mon, 27 Apr 2020 20:38:20 +0800</pubDate>
-      
-      <guid>https://www.yaohong.vip/post/sensegroup/</guid>
-      <description>英语发音-连读和节奏 一、连读 连读指在同个意群里，前一个辅音音素结尾，后一个单词以元音音素开头，把它们连起来读。 连读本质是用更短的时间传达信息</description>
     </item>
     
   </channel>

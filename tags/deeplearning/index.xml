@@ -6,10 +6,22 @@
     <description>Recent content in Deeplearning on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2020 09:15:20 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 15:18:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Some notes on Convolution Course</title>
+      <link>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</link>
+      <pubDate>Mon, 04 May 2020 15:18:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</guid>
+      <description>Some notes on Convolution course  What is padding?  Padding is to add some pixels to the border of the original image, such as a 6*6 image will become a 8*8 image if we add a pixel to its border.
+  Why is filters always odd?
+  valid convolution vs same convolution.
+  valid convolution is on padding that means the actual pixels of the output image after we convole original image with filter.</description>
+    </item>
     
     <item>
       <title>深度学习-第一个数字识别项目</title>
