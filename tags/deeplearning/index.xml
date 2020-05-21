@@ -6,7 +6,7 @@
     <description>Recent content in Deeplearning on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2020 15:18:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2020 15:18:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Some notes on Convolution Course</title>
       <link>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</link>
-      <pubDate>Mon, 04 May 2020 15:18:20 +0800</pubDate>
+      <pubDate>Thu, 21 May 2020 15:18:20 +0800</pubDate>
       
       <guid>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</guid>
       <description>Some notes on Convolution course  What is padding?  Padding is to add some pixels to the border of the original image, such as a 6*6 image will become a 8*8 image if we add a pixel to its border.
