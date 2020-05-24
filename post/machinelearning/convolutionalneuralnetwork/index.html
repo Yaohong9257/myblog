@@ -352,42 +352,47 @@ window.addEventListener('load', function () {
                 </header>
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#some-notes-on-convolution-course">Some notes on Convolution course</a></li>
+    <li><a href="#some-notes-on-convolution-course">Some notes on Convolution course</a>
+      <ul>
+        <li><a href="#what-is-padding">What is padding?</a></li>
+        <li><a href="#valid-convolution-vs-same-convolution">valid convolution vs same convolution.</a></li>
+        <li><a href="#what-is-strided-convolution">What is strided convolution?</a></li>
+        <li><a href="#how-to-convolution-over-volumes">How to convolution over volumes?</a></li>
+        <li><a href="#why-filters-are-always-odd">Why filters are always odd?</a></li>
+        <li><a href="#what-is-max-pooling-and-how-do-it-do">What is max pooling and how do it do?</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 
                 <h1 id="some-notes-on-convolution-course">Some notes on Convolution course</h1>
-<ul>
-<li>What is padding?</li>
-</ul>
+<h2 id="what-is-padding">What is padding?</h2>
 <p>Padding is to add some pixels to the border of the original image, such as a <code>6*6</code> image will become a <code>8*8</code> image if we add a pixel to its border.</p>
-<ul>
-<li>
-<p>Why is filters always odd?</p>
-</li>
-<li>
-<p>valid convolution vs same convolution.</p>
-</li>
-</ul>
+<h2 id="valid-convolution-vs-same-convolution">valid convolution vs same convolution.</h2>
 <p>valid convolution is on padding that means the actual pixels of the output image after we convole original image with filter.</p>
 <p>same convolution means adding padding so that the output image has the same size as its input image.</p>
-<ul>
-<li>What is strided convolution?</li>
-</ul>
+<h2 id="what-is-strided-convolution">What is strided convolution?</h2>
 <p>When we convolve an image with a filter matrix, we select a rectangular area with the same width as the filter matrix width.</p>
 <p>and we will multiply this rectangular area by the filter matrix to get a output pixel.</p>
 <p>The stride is the number of pixels we move the rectangular area to right or down. The default stride is 1, that means the rectangular area move forward in one pixel each time.</p>
 <p><code>output matrix = [(n+2p-f) / s]+1</code></p>
-<ul>
-<li>How to convolution over volumes?</li>
-</ul>
+<h2 id="how-to-convolution-over-volumes">How to convolution over volumes?</h2>
 <p>A RGB image have three layers: red、 green and blue.</p>
 <p>Volumes is a collection of filters, it looks like a cube. For a RGB image, a filter in first layer may have three walls which correspond to RGB.</p>
 <p>Let&rsquo;s say the first layer have only one filter and suppose size of this filter is <code>3 x 3</code>, and this fliter have threes walls which correspond to RGB.</p>
 <p>To convolve a RGB image with this filter is to multiply threes fliter wall with RGB channels  respectively; For example multiply first filter wall with red channel of image, then do second fliter wall with green channel of image, thrid filter wall with blue channge of image. After do that, the first number of output matrix is to sum up three products.</p>
 <p>And so on, calculate the next number of output until getting the last number.</p>
+<h2 id="why-filters-are-always-odd">Why filters are always odd?</h2>
+<p>For an odd-sized filter, all the previous layer pixels would be symmetrically around the output pixel. Without this symmetry, we will have to account for distortions across the layers which happens when using an even sized kernel. Therefore, even sized kernel filters are mostly skipped to promote implementation simplicity.</p>
+<h2 id="what-is-max-pooling-and-how-do-it-do">What is max pooling and how do it do?</h2>
+<p>A pool is a square area, it has its size such as 2 * 2, 4 * 4.</p>
+<p><code>max pooling</code> can get a sub-matrix from the source matrix by splitting the origin matrix into small pool-size area, selecting the largest number from each small area, and using the largest number to form another matrix in the original order.</p>
+<p>Max pooling is done to in part to help over-fitting by providing an abstracted form of the representation. As well, it reduces the computational cost by reducing the number of parameters to learn.</p>
+<p><img src="/img/diagram/deeplearning/max_pooling.png" alt="Max pooling"></p>
 <p>References:
 <a href="https://www.youtube.com/watch?v=tQYZaDn_kSg&amp;list=PLkDaE6sCZn6Gl29AoE31iwdVwSG-KnDzF&amp;index=5">Convolutional Neural Networks (Course 4 of the Deep Learning Specialization)</a></p>
+<p><a href="https://towardsdatascience.com/deciding-optimal-filter-size-for-cnns-d6f7b56f9363">Deciding optimal kernel size for CNN</a></p>
+<p><a href="https://deepai.org/machine-learning-glossary-and-terms/max-pooling">What is Max Pooling?</a></p>
 
 
                 
