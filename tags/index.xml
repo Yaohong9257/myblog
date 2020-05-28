@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2020 15:18:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 20:26:20 +0800</lastBuildDate>
     
 	<atom:link href="https://www.yaohong.vip/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JAVA</title>
+      <link>https://www.yaohong.vip/tags/java/</link>
+      <pubDate>Thu, 28 May 2020 20:26:20 +0800</pubDate>
+      
+      <guid>https://www.yaohong.vip/tags/java/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Deeplearning</title>
