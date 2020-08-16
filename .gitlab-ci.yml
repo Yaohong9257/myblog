@@ -1,12 +1,11 @@
-# image: monachus/hugo
+image: monachus/hugo
 
 # variables:
 #   GIT_SUBMODULE_STRATEGY: recursive
 
-
 pages:
   artifacts:
     paths:
-    - .
+    - ./
   only:
   - gh-pages
