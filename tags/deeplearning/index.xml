@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deeplearning on Yaohong</title>
-    <link>https://www.yaohong.vip/tags/deeplearning/</link>
+    <link>https://yaohong9257.github.io/blog/tags/deeplearning/</link>
     <description>Recent content in Deeplearning on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 May 2020 15:18:20 +0800</lastBuildDate>
     
-	<atom:link href="https://www.yaohong.vip/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaohong9257.github.io/blog/tags/deeplearning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Some notes on Convolution Course</title>
-      <link>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</link>
+      <link>https://yaohong9257.github.io/blog/post/machinelearning/convolutionalneuralnetwork/</link>
       <pubDate>Thu, 21 May 2020 15:18:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/machinelearning/convolutionalneuralnetwork/</guid>
       <description>Some notes on Convolution course What is padding? Padding is to add some pixels to the border of the original image, such as a 6*6 image will become a 8*8 image if we add a pixel to its border.
 valid convolution vs same convolution. valid convolution is on padding that means the actual pixels of the output image after we convole original image with filter.
 same convolution means adding padding so that the output image has the same size as its input image.</description>
@@ -24,10 +24,10 @@ same convolution means adding padding so that the output image has the same size
     
     <item>
       <title>深度学习-第一个数字识别项目</title>
-      <link>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</link>
+      <link>https://yaohong9257.github.io/blog/post/machinelearning/mynumberidentify/</link>
       <pubDate>Sun, 03 May 2020 09:15:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/machinelearning/mynumberidentify/</guid>
       <description>深度学习-第一个数字识别项目 今天按Google官方推荐流程，整理了开发模板，不是所有深度学习都严格按这个模板来实现，不同项目步骤有所删减，但</description>
     </item>
     

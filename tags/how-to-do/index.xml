@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How to do on Yaohong</title>
-    <link>https://www.yaohong.vip/tags/how-to-do/</link>
+    <link>https://yaohong9257.github.io/blog/tags/how-to-do/</link>
     <description>Recent content in How to do on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 May 2020 13:43:20 +0800</lastBuildDate>
     
-	<atom:link href="https://www.yaohong.vip/tags/how-to-do/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaohong9257.github.io/blog/tags/how-to-do/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>广东家常菜做法记录</title>
-      <link>https://www.yaohong.vip/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/</link>
+      <link>https://yaohong9257.github.io/blog/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 03 May 2020 13:43:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/</guid>
       <description>广东家常菜 豆豉排骨 食材： 排骨一根（约350g） 豆豉（5克 约覆盖的碗底） 香菇（10g 约覆盖的碗底） 土豆(80g) 酱油(5ml) 盐(3克) 水（1</description>
     </item>
     
     <item>
       <title>深度学习-第一个数字识别项目</title>
-      <link>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</link>
+      <link>https://yaohong9257.github.io/blog/post/machinelearning/mynumberidentify/</link>
       <pubDate>Sun, 03 May 2020 09:15:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/machinelearning/mynumberidentify/</guid>
       <description>深度学习-第一个数字识别项目 今天按Google官方推荐流程，整理了开发模板，不是所有深度学习都严格按这个模板来实现，不同项目步骤有所删减，但</description>
     </item>
     
     <item>
       <title>Echo set color</title>
-      <link>https://www.yaohong.vip/post/echoaddcolor/</link>
+      <link>https://yaohong9257.github.io/blog/post/echoaddcolor/</link>
       <pubDate>Sun, 26 Apr 2020 09:40:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/echoaddcolor/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/echoaddcolor/</guid>
       <description>Echo set color 先看例子：echo -e &amp;quot;\033[32m Hello world \033[0m&amp;quot; 会输出 $echo -e &amp;quot;\033[32m Hello world \033[0m&amp;quot; Hello world # 绿色的文字 其中： -e表示解析逃逸字符（Escape character），逃逸字符为</description>
     </item>
     
     <item>
       <title>How to use CleanWhite Hugo Theme?</title>
-      <link>https://www.yaohong.vip/post/how-to-use-cleanwhite-hugo-theme/</link>
+      <link>https://yaohong9257.github.io/blog/post/how-to-use-cleanwhite-hugo-theme/</link>
       <pubDate>Fri, 24 Apr 2020 15:57:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/how-to-use-cleanwhite-hugo-theme/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/how-to-use-cleanwhite-hugo-theme/</guid>
       <description>How to use CleanWhite Hugo Theme? CleanWhite Hugo Theme 是Huabing Zhao制作的hugo主题，非常高雅好用，再次感谢Huabing。 我在使用时，花了一点时间，主要遇到以下问</description>
     </item>
     

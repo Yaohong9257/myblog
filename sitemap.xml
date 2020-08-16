@@ -3,147 +3,152 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.yaohong.vip/categories/</loc>
+    <loc>https://yaohong9257.github.io/blog/categories/</loc>
+    <lastmod>2020-08-14T20:15:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yaohong9257.github.io/blog/categories/</loc>
+    <lastmod>2020-08-14T20:15:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yaohong9257.github.io/blog/post/php/phpautoload/</loc>
+    <lastmod>2020-08-14T20:15:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yaohong9257.github.io/blog/post/</loc>
+    <lastmod>2020-08-14T20:15:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yaohong9257.github.io/blog/categories/tech/</loc>
+    <lastmod>2020-08-14T20:15:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yaohong9257.github.io/blog/</loc>
+    <lastmod>2020-08-14T20:15:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yaohong9257.github.io/blog/tags/java/</loc>
     <lastmod>2020-05-28T20:26:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/categories/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/java/javaserialize/</loc>
     <lastmod>2020-05-28T20:26:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/tags/java/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/</loc>
     <lastmod>2020-05-28T20:26:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/java/javaserialize/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/</loc>
     <lastmod>2020-05-28T20:26:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/</loc>
-    <lastmod>2020-05-28T20:26:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.yaohong.vip/tags/</loc>
-    <lastmod>2020-05-28T20:26:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.yaohong.vip/tags/</loc>
-    <lastmod>2020-05-28T20:26:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.yaohong.vip/categories/tech/</loc>
-    <lastmod>2020-05-28T20:26:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.yaohong.vip/</loc>
-    <lastmod>2020-05-28T20:26:20+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.yaohong.vip/categories/ai/</loc>
+    <loc>https://yaohong9257.github.io/blog/categories/ai/</loc>
     <lastmod>2020-05-21T15:18:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/tags/deeplearning/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/deeplearning/</loc>
     <lastmod>2020-05-21T15:18:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/tags/notes/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/notes/</loc>
     <lastmod>2020-05-21T15:18:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/categories/notes/</loc>
+    <loc>https://yaohong9257.github.io/blog/categories/notes/</loc>
     <lastmod>2020-05-21T15:18:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/machinelearning/convolutionalneuralnetwork/</loc>
     <lastmod>2020-05-21T15:18:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/other/mylittlebaby/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/other/mylittlebaby/</loc>
     <lastmod>2020-05-14T22:25:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/tags/how-to-do/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/how-to-do/</loc>
     <lastmod>2020-05-03T13:43:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/other/%E5%B9%BF%E4%B8%9C%E5%AE%B6%E5%B8%B8%E8%8F%9C%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2020-05-03T13:43:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/machinelearning/mynumberidentify/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/machinelearning/mynumberidentify/</loc>
     <lastmod>2020-05-03T09:15:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/deeplearninghistory1/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/deeplearninghistory1/</loc>
     <lastmod>2020-05-01T22:39:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/tags/english/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/english/</loc>
     <lastmod>2020-04-27T20:38:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/tags/studynote/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/studynote/</loc>
     <lastmod>2020-04-27T20:38:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/sensegroup/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/sensegroup/</loc>
     <lastmod>2020-04-27T20:38:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/echoaddcolor/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/echoaddcolor/</loc>
     <lastmod>2020-04-26T09:40:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/post/how-to-use-cleanwhite-hugo-theme/</loc>
+    <loc>https://yaohong9257.github.io/blog/post/how-to-use-cleanwhite-hugo-theme/</loc>
     <lastmod>2020-04-24T15:57:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/categories/tech/</loc>
+    <loc>https://yaohong9257.github.io/blog/categories/tech/</loc>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/search/placeholder/</loc>
+    <loc>https://yaohong9257.github.io/blog/search/placeholder/</loc>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/tags/how-to-do/</loc>
+    <loc>https://yaohong9257.github.io/blog/tags/how-to-do/</loc>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/top/about/</loc>
+    <loc>https://yaohong9257.github.io/blog/top/about/</loc>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/search/</loc>
+    <loc>https://yaohong9257.github.io/blog/search/</loc>
   </url>
   
   <url>
-    <loc>https://www.yaohong.vip/top/</loc>
+    <loc>https://yaohong9257.github.io/blog/top/</loc>
   </url>
   
 </urlset>

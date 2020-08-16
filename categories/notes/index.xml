@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Yaohong</title>
-    <link>https://www.yaohong.vip/categories/notes/</link>
+    <link>https://yaohong9257.github.io/blog/categories/notes/</link>
     <description>Recent content in Notes on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 May 2020 15:18:20 +0800</lastBuildDate>
     
-	<atom:link href="https://www.yaohong.vip/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaohong9257.github.io/blog/categories/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Some notes on Convolution Course</title>
-      <link>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</link>
+      <link>https://yaohong9257.github.io/blog/post/machinelearning/convolutionalneuralnetwork/</link>
       <pubDate>Thu, 21 May 2020 15:18:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/machinelearning/convolutionalneuralnetwork/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/machinelearning/convolutionalneuralnetwork/</guid>
       <description>Some notes on Convolution course What is padding? Padding is to add some pixels to the border of the original image, such as a 6*6 image will become a 8*8 image if we add a pixel to its border.
 valid convolution vs same convolution. valid convolution is on padding that means the actual pixels of the output image after we convole original image with filter.
 same convolution means adding padding so that the output image has the same size as its input image.</description>
@@ -24,10 +24,10 @@ same convolution means adding padding so that the output image has the same size
     
     <item>
       <title>英语发音-连读和节奏</title>
-      <link>https://www.yaohong.vip/post/sensegroup/</link>
+      <link>https://yaohong9257.github.io/blog/post/sensegroup/</link>
       <pubDate>Mon, 27 Apr 2020 20:38:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/post/sensegroup/</guid>
+      <guid>https://yaohong9257.github.io/blog/post/sensegroup/</guid>
       <description>英语发音-连读和节奏 一、连读 连读指在同个意群里，前一个辅音音素结尾，后一个单词以元音音素开头，把它们连起来读。 连读本质是用更短的时间传达信息</description>
     </item>
     

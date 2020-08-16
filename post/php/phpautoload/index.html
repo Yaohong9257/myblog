@@ -22,9 +22,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="PHP autoload" />
+    <meta property="og:title" content="PHP autoload" />
+    <meta property="twitter:title" content="PHP autoload" />
     
 
     
@@ -41,9 +41,9 @@
     <meta name="keyword"  content="黄耀鸿, Yaohong Blog, Huangyaohong Blog, Rhys Blog, 黄耀鸿的博客, 人工智能, 全栈工程师, 神经网络, 深度学习, 机器学习">
     <link rel="shortcut icon" href="/blog/img/favicon.ico">
 
-    <title>Posts-黄耀鸿的博客 | Rhys Blog</title>
+    <title>PHP autoload-黄耀鸿的博客 | Rhys Blog</title>
 
-    <link rel="canonical" href="/blog/blog/post/">
+    <link rel="canonical" href="/blog/blog/post/php/phpautoload/">
 
     <link rel="stylesheet" href="/blog/css/iDisqus.min.css"/>
 	
@@ -161,14 +161,168 @@
 
 
 
-<header class="intro-header" style="background-image: url('/blog/img/header_image-night-sky.jpg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/blog/img/header_image-night-sky.jpg')
+    }
+</style>
+<header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Yaohong </h1>
-                    
-		    <span class="subheading">为了真相不惜被羞辱</span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/blog/tags/" title="">
+                            
+                        </a>
+                        
+                    </div>
+                    <h1>PHP autoload</h1>
+                    <h2 class="subheading">更新中...</h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                 &#34;yaohong&#34;
+                         
+                        on 
+                        Friday, August 14, 2020
+                        
+                            <span id="/blog/post/php/phpautoload/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script type="text/javascript">
+AV.initialize("jcb1xc6NmyXeatCQxOhKVYMF-gzGzoHsz", "dGFLVjlzCvlwQderBmGTeFoH");
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+window.addEventListener('load', function () {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount2(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                        
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -181,13 +335,94 @@
 <article>
     <div class="container">
         <div class="row">
+
             
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-11 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#php-autoload">php autoload</a></li>
+  </ul>
+</nav>
+                
+                <h1 id="php-autoload">php autoload</h1>
+<p>In general, when we use a file which not include in current file, we need to load it in current file by using <code>require</code> or <code>include</code>;</p>
+<p>But when a project has a lot of php files, it is not a good way to include each file manually.</p>
+<p>Let&rsquo;s see a simple code:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#ff79c6">&lt;?php</span>
+<span style="color:#8be9fd;font-style:italic">$person</span> <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> Person(<span style="color:#f1fa8c">&#34;Rhys&#34;</span>, <span style="color:#bd93f9">20</span>);
+
+var_dump(<span style="color:#8be9fd;font-style:italic">$person</span>);
+</code></pre></div><p>There is a new class <code>Person</code> which didn&rsquo;t be load in current file. In this case, php will call default autoload method　<code>spl_autoload()</code> in order to load possible class;</p>
+<p>In OPCODE file, it call <code>FETCH_CLASS</code> method. Refer to the source file, we found that it call <code>autoload_func</code>;</p>
+<p><code>spl_autoload_call</code> will try all registered <code>__autoload()</code> functions to load the requested class;</p>
+<p><code>spl_autoload()</code>: spl_autoload ( string $class_name [, string $file_extensions = spl_autoload_extensions() ] ) : void</p>
+<p>The <code>spl_autoload_register()</code> function registers any number of autoloaders, enabling for classes and interfaces to be automatically loaded if they are currently not defined. By registering autoloaders, PHP is given a last chance to load the class or interface before it fails with an error.</p>
+<p>REFERENCE:
+<a href="https://www.php.net/manual/en/language.oop5.autoload.php">https://www.php.net/manual/en/language.oop5.autoload.php</a></p>
+<p><a href="https://segmentfault.com/a/1190000006188247">https://segmentfault.com/a/1190000006188247</a></p>
+
+
+                
+                
+<div class="entry-shang text-center">
+    
+	    <p> 「点个赞」</p>
+	
+	<button class="zs show-zs btn btn-bred">赞赏支持</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+	<div class="zs-modal-head">
+		<button type="button" class="close">×</button>
+		<span class="author"><a href="https://yaohong9257.github.io/blog/"><img src="/blog/img/favicon.png" />Yaohong</a></span>
+        
+	        <p class="tip"><i></i><span>点个赞</span></p>
+		
+ 
+	</div>
+	<div class="zs-modal-body">
+		<div class="zs-modal-btns">
+			<button class="btn btn-blink" data-num="2">2元</button>
+			<button class="btn btn-blink" data-num="5">5元</button>
+			<button class="btn btn-blink" data-num="10">10元</button>
+			<button class="btn btn-blink" data-num="50">50元</button>
+			<button class="btn btn-blink" data-num="100">100元</button>
+			<button class="btn btn-blink" data-num="1">任意金额</button>
+		</div>
+		<div class="zs-modal-pay">
+			<button class="btn btn-bred" id="pay-text">2元</button>
+			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
+			<img src="/blog/img/reward/wechat-2.png"  id="pay-image"/>
+		</div>
+	</div>
+	<div class="zs-modal-footer">
+		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/blog/img/reward/wechat-btn.png"/></span></label>
+		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/blog/img/reward/alipay-btn.png"/></span></label>
+	</div>
+</div>
+<script type="text/javascript" src="/blog/js/reward.js"></script>
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/blog/post/java/javaserialize/" data-toggle="tooltip" data-placement="top" title="JAVA 序列化">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
                 
 <div id="disqus-comment"></div>
 
@@ -210,7 +445,7 @@
             </div>
             
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-11 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
@@ -224,7 +459,7 @@
                         
                         
                         <a href="/blog/tags/deeplearning" title="deeplearning">
-                        deeplearning
+                            deeplearning
                         </a>
                         
                         
@@ -232,7 +467,7 @@
                         
                         
                         <a href="/blog/tags/how-to-do" title="how-to-do">
-                        how-to-do
+                            how-to-do
                         </a>
                         
                         
@@ -263,7 +498,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/blog/post/index.xml' rel="alternate" type="application/rss+xml" title="Yaohong" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Yaohong" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>

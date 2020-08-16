@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Yaohong</title>
-    <link>https://www.yaohong.vip/tags/</link>
+    <link>https://yaohong9257.github.io/blog/tags/</link>
     <description>Recent content in Tags on Yaohong</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 May 2020 20:26:20 +0800</lastBuildDate>
     
-	<atom:link href="https://www.yaohong.vip/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://yaohong9257.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JAVA</title>
-      <link>https://www.yaohong.vip/tags/java/</link>
+      <link>https://yaohong9257.github.io/blog/tags/java/</link>
       <pubDate>Thu, 28 May 2020 20:26:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/tags/java/</guid>
+      <guid>https://yaohong9257.github.io/blog/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deeplearning</title>
-      <link>https://www.yaohong.vip/tags/deeplearning/</link>
+      <link>https://yaohong9257.github.io/blog/tags/deeplearning/</link>
       <pubDate>Thu, 21 May 2020 15:18:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/tags/deeplearning/</guid>
+      <guid>https://yaohong9257.github.io/blog/tags/deeplearning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Notes</title>
-      <link>https://www.yaohong.vip/tags/notes/</link>
+      <link>https://yaohong9257.github.io/blog/tags/notes/</link>
       <pubDate>Thu, 21 May 2020 15:18:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/tags/notes/</guid>
+      <guid>https://yaohong9257.github.io/blog/tags/notes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to do</title>
-      <link>https://www.yaohong.vip/tags/how-to-do/</link>
+      <link>https://yaohong9257.github.io/blog/tags/how-to-do/</link>
       <pubDate>Sun, 03 May 2020 13:43:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/tags/how-to-do/</guid>
+      <guid>https://yaohong9257.github.io/blog/tags/how-to-do/</guid>
       <description></description>
     </item>
     
     <item>
       <title>English</title>
-      <link>https://www.yaohong.vip/tags/english/</link>
+      <link>https://yaohong9257.github.io/blog/tags/english/</link>
       <pubDate>Mon, 27 Apr 2020 20:38:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/tags/english/</guid>
+      <guid>https://yaohong9257.github.io/blog/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>StudyNote</title>
-      <link>https://www.yaohong.vip/tags/studynote/</link>
+      <link>https://yaohong9257.github.io/blog/tags/studynote/</link>
       <pubDate>Mon, 27 Apr 2020 20:38:20 +0800</pubDate>
       
-      <guid>https://www.yaohong.vip/tags/studynote/</guid>
+      <guid>https://yaohong9257.github.io/blog/tags/studynote/</guid>
       <description></description>
     </item>
     
